@@ -1,0 +1,44 @@
+<!doctype html>
+<html >
+<head>
+<meta charset="UTF-8" />
+<title>Hit the Bird</title>
+<script src="js/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/htb.js" type="text/javascript" charset="utf-8"></script>
+<style>
+*{
+	padding:0px;
+	margin:0px;
+}
+#feld{
+	background-image:url(img/land.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+
+#punkte{
+	position:fixed;
+	top:0px;
+	left:420px;
+	width:60px;
+	border:none;
+	background: none;
+	font-weight:bold;
+}
+#zeit{
+	position:fixed;
+	top:20px;
+	left:420px;
+	width:60px;
+	border:none;
+	background: none;
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+<input type="text" id="punkte" value="0"/>
+<input type="text" id="zeit" value="90"/>
+<canvas height="320" width="480" id="feld"></canvas>
+</body>
+</html>
